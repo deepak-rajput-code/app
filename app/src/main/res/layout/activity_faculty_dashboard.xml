@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faculty_dashboard">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F7FA">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:background="#FFFFFF">
+
+
+
+                    <ImageView
+                        android:id="@+id/imgFaculty"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        app:srcCompat="@drawable/images"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_background"
+                        android:padding="3dp"
+                        android:contentDescription="Faculty Photo" />
+
+
+                    <TextView
+                        android:id="@+id/tvFacultyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="Faculty Name"
+                        android:textColor="#172B4D"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:text="Faculty Dashboard"
+                    android:textColor="#172B4D"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Branch"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupBranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp">
+
+
+
+                    <RadioButton
+                        android:id="@+id/radioIT"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="IT"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:buttonTint="#1976D2"
+                        android:paddingStart="8dp" />
+
+
+
+                    <RadioButton
+                        android:id="@+id/radioEE"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="EE"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:buttonTint="#1976D2"
+                        android:paddingStart="8dp" />
+
+
+
+                    <RadioButton
+                        android:id="@+id/radioCE"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="CE"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:buttonTint="#1976D2"
+                        android:paddingStart="8dp" />
+
+                </RadioGroup>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Year"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginTop="20dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp">
+
+
+
+                    <RadioButton
+                        android:id="@+id/radioYear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:buttonTint="#1976D2"
+                        android:paddingStart="8dp" />
+
+
+
+                    <RadioButton
+                        android:id="@+id/radioYear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="2"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:buttonTint="#1976D2"
+                        android:paddingStart="8dp" />
+
+
+
+                    <RadioButton
+                        android:id="@+id/radioYear3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:buttonTint="#1976D2"
+                        android:paddingStart="8dp" />
+
+
+
+                    <RadioButton
+                        android:id="@+id/radioYear4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="4"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:buttonTint="#1976D2"
+                        android:paddingStart="8dp" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subject Code"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:id="@+id/etSubjectCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="Enter Subject Code (Example: BCS056)"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="10"
+                    android:padding="12dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#888888"
+                    android:textSize="16sp" />
+
+
+                <Button
+                    android:id="@+id/btnLoadStudents"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="LOAD STUDENTS"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp" />
+
+
+
+                <Button
+                    android:id="@+id/btnDownloadAttendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="DOWNLOAD ATTENDANCE"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#1565C0"
+                    android:layout_marginTop="12dp" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/studentSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginTop="30dp"
+                    android:padding="20dp"
+                    android:background="#FFFFFF">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Student Attendance"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#172B4D"
+                        android:gravity="center" />
+
+
+                    <TextView
+                        android:id="@+id/tvStudentNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Student 1 of 40"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/tvRollNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Roll Number"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/tvStudentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Student Name"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textSize="16sp"
+                        android:textColor="#555555"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="25dp">
+
+
+
+                        <Button
+                            android:id="@+id/btnPresent"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:text="PRESENT"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:backgroundTint="#2E7D32" />
+
+                        <Space
+                            android:layout_width="15dp"
+                            android:layout_height="1dp" />
+
+
+
+                        <Button
+                            android:id="@+id/btnAbsent"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:text="ABSENT"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:backgroundTint="#C62828" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="NEXT STUDENT →"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginTop="20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "386538193392",
+    "project_id": "deepak-raj-5471",
+    "storage_bucket": "deepak-raj-5471.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386538193392:android:4ede3036f64e6623235d35",
+        "android_client_info": {
+          "package_name": "com.deepak.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG5siSWWn5OIznkcpisLs-CnZVSCW7N_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

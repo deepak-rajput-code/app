@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/or"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/regi_info"
+        app:layout_constraintEnd_toStartOf="@+id/forgottenbtn"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toEndOf="@+id/loginbtn"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="86dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#2196F3"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="@+id/or"
+        app:layout_constraintEnd_toStartOf="@+id/or"
+        app:layout_constraintStart_toStartOf="@+id/regi_info"
+        app:layout_constraintTop_toTopOf="@+id/or" />
+
+    <Button
+        android:id="@+id/forgottenbtn"
+        android:layout_width="193dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#2196F3"
+        android:text="@string/forgotten_password"
+        app:layout_constraintBottom_toBottomOf="@+id/or"
+        app:layout_constraintEnd_toEndOf="@+id/regi_info"
+        app:layout_constraintStart_toEndOf="@+id/or"
+        app:layout_constraintTop_toTopOf="@+id/or" />
+
+    <TextView
+        android:id="@+id/student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r_e_c_b_attendance"
+        android:textColor="#3F51B5"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="316dp"
+        android:layout_height="58dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_username"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/student" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="316dp"
+        android:layout_height="58dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/or"
+        app:layout_constraintEnd_toEndOf="@+id/forgottenbtn"
+        app:layout_constraintStart_toStartOf="@+id/loginbtn"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="111dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/student"
+        app:layout_constraintEnd_toEndOf="@+id/student"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="@+id/student"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561"
+        app:srcCompat="@drawable/images" />
+
+    <TextView
+        android:id="@+id/regi_info"
+        android:layout_width="343dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="249dp"
+        android:text="@string/if_you_don_t_have_an_account"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-15dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/register"
+        android:textColor="#4401A0"
+        app:layout_constraintBottom_toBottomOf="@+id/regi_info"
+        app:layout_constraintEnd_toEndOf="@+id/regi_info"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="@+id/regi_info"
+        app:layout_constraintTop_toTopOf="@+id/regi_info"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

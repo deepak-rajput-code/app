@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_attendance_xml"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student_dashboard">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/studentdashboard"
+                android:textColor="#3F51B5"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/student_photo"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:background="#DDDDDD"
+                android:contentDescription="@string/student_photo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/images" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/student_details"
+                android:textColor="#222222"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/student_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:text="@string/name"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/student_roll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:text="@string/roll_no"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/student_branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:text="@string/branch"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/student_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:text="@string/year"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/student_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:text="@string/semester"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/attendance_btn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#3F51B5"
+                android:text="Attendance"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/assignment_btn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#3F51B5"
+                android:text="@string/assignments"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/marks_btn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="#3F51B5"
+                android:text="@string/class_test_marks"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
